@@ -19,7 +19,14 @@
     </div>
   </header>
   <main>
-    <div class="container">
+    <div class="container" id="loginContainer">
+      <h2>Admin Login</h2>
+      <form id="loginForm">
+        <input type="password" id="adminPassword" required placeholder="Enter Password">
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <div class="container" id="adminContainer" style="display: none;">
       <h2>Add New Results</h2>
       <form id="resultForm">
         <input type="text" id="resultName" placeholder="Enter Name" required>
