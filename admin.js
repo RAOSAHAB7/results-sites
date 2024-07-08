@@ -1,3 +1,16 @@
+const ADMIN_PASSWORD = 'your_secure_password'; // Replace with your actual password
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const password = document.getElementById('adminPassword').value;
+  if (password === ADMIN_PASSWORD) {
+    document.getElementById('loginContainer').style.display = 'none';
+    document.getElementById('adminContainer').style.display = 'block';
+  } else {
+    alert('Incorrect password. Access denied.');
+  }
+});
+
 document.getElementById('resultForm').addEventListener('submit', function(event) {
   event.preventDefault();
   const resultName = document.getElementById('resultName').value;
