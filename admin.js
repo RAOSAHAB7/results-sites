@@ -1,23 +1,13 @@
-document.getElementById('resultForm').addEventListener('submit', async (event) => {
+document.getElementById('resultForm').addEventListener('submit', function(event) {
   event.preventDefault();
+
   const name = document.getElementById('name').value;
   const time = document.getElementById('time').value;
   const result = document.getElementById('result').value;
 
-  const token = localStorage.getItem('token');
-  
-  const response = await fetch('http://localhost:3000/results', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${token}`
-    },
-    body: JSON.stringify({ name, time, result })
-  });
+  const results = JSON.parse(localStorage.getItem('results')) || [];
+  results.push({ name, time, result });
+  localStorage.setItem('results', JSON.stringify(results));
 
-  if (response.ok) {
-    alert('Result uploaded successfully');
-  } else {
-    alert('Failed to upload result');
-  }
+  alert('Result saved successfully!');
 });
