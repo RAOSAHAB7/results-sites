@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  color: #333;
 }
 
 .container {
@@ -38,9 +39,13 @@ main {
   padding: 1em 0;
 }
 
+h2 {
+  margin-bottom: 0.5em;
+}
+
 #results {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1em;
 }
 
@@ -49,6 +54,11 @@ main {
   padding: 1em;
   border: 1px solid #ddd;
   text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-item h3 {
+  margin: 0 0 0.5em;
 }
 
 footer {
@@ -56,4 +66,29 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+form input, form button {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
 }
