@@ -1,4 +1,4 @@
-const ADMIN_PASSWORD =  'Ankit@99'; // Replace with your actual password
+const Ankit@99 =  'Ankit@99'; // Replace with your actual password
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
   event.preventDefault();
