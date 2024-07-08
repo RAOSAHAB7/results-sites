@@ -1,43 +1,23 @@
-const ADMIN_PASSWORD = 'your_secure_password'; // Replace with your actual password
-
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+document.getElementById('resultForm').addEventListener('submit', async (event) => {
   event.preventDefault();
-  const password = document.getElementById('adminPassword').value;
-  if (password === ADMIN_PASSWORD) {
-    document.getElementById('loginContainer').style.display = 'none';
-    document.getElementById('adminContainer').style.display = 'block';
+  const name = document.getElementById('name').value;
+  const time = document.getElementById('time').value;
+  const result = document.getElementById('result').value;
+
+  const token = localStorage.getItem('token');
+  
+  const response = await fetch('http://localhost:3000/results', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+    },
+    body: JSON.stringify({ name, time, result })
+  });
+
+  if (response.ok) {
+    alert('Result uploaded successfully');
   } else {
-    alert('Incorrect password. Access denied.');
+    alert('Failed to upload result');
   }
 });
-
-document.getElementById('resultForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  const resultName = document.getElementById('resultName').value;
-  const resultTime = document.getElementById('resultTime').value;
-  const newResult = document.getElementById('newResult').value;
-  addResult(resultName, resultTime, newResult);
-});
-
-function addResult(name, time, result) {
-  let results = JSON.parse(localStorage.getItem('results')) || [];
-  results.push({ name, time, result });
-  localStorage.setItem('results', JSON.stringify(results));
-  alert('Result added successfully');
-}
- 
-
-document.getElementById('resultForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  const resultName = document.getElementById('resultName').value;
-  const resultTime = document.getElementById('resultTime').value;
-  const newResult = document.getElementById('newResult').value;
-  addResult(resultName, resultTime, newResult);
-});
-
-function addResult(name, time, result) {
-  let results = JSON.parse(localStorage.getItem('results')) || [];
-  results.push({ name, time, result });
-  localStorage.setItem('results', JSON.stringify(results));
-  alert('Result added successfully');
-}
