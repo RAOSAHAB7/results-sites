@@ -1,21 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Panel</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Admin Panel</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="admin.html">Admin</a></li>
-        </ul>
-      </nav>
+const ADMIN_PASSWORD =  'Ankit@99'; // Replace with your actual password
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const password = document.getElementById('adminPassword').value;
+  if (password === ADMIN_PASSWORD) {
+    document.getElementById('loginContainer').style.display = 'none';
+    document.getElementById('adminContainer').style.display = 'block';
+  } else {
+    alert('Incorrect password. Access denied.');
+  }
+});
+
+document.getElementById('resultForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const resultName = document.getElementById('resultName').value;
+  const resultTime = document.getElementById('resultTime').value;
+  const newResult = document.getElementById('newResult').value;
+  addResult(resultName, resultTime, newResult);
+});
+
+function addResult(name, time, result) {
+  let results = JSON.parse(localStorage.getItem('results')) || [];
+  results.push({ name, time, result });
+  localStorage.setItem('results', JSON.stringify(results));
+  alert('Result added successfully');
+}
+
     </div>
   </header>
   <main>
