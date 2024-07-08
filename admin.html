@@ -20,8 +20,10 @@
   </header>
   <main>
     <div class="container">
-      <h2>Add New Result</h2>
+      <h2>Add New Results</h2>
       <form id="resultForm">
+        <input type="text" id="resultName" placeholder="Enter Name" required>
+        <input type="time" id="resultTime" required>
         <input type="number" id="newResult" min="0" max="99" required placeholder="Enter Result (00-99)">
         <button type="submit">Add Result</button>
       </form>
