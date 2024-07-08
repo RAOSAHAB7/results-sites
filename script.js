@@ -1,8 +1,7 @@
 async function fetchResults() {
   try {
-    const response = await fetch('https://api.example.com/results'); // Replace with the actual URL
-    const data = await response.json();
-    displayResults(data);
+    const results = JSON.parse(localStorage.getItem('results')) || [];
+    displayResults(results);
   } catch (error) {
     console.error('Error fetching results:', error);
   }
@@ -14,7 +13,7 @@ function displayResults(data) {
   data.forEach(result => {
     const resultElement = document.createElement('div');
     resultElement.className = 'result-item';
-    resultElement.textContent = `Result: ${result}`;
+    resultElement.innerHTML = `<h3>${result.name} (${result.time})</h3><p>Result: ${result.result}</p>`;
     resultsDiv.appendChild(resultElement);
   });
 }
