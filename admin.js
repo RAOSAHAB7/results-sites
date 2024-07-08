@@ -5,7 +5,6 @@ document.getElementById('resultForm').addEventListener('submit', function(event)
 });
 
 function addResult(result) {
-  // For simplicity, storing results in localStorage
   let results = JSON.parse(localStorage.getItem('results')) || [];
   results.push(result);
   localStorage.setItem('results', JSON.stringify(results));
