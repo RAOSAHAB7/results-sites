@@ -1,28 +1,1056 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Results Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Satta King Result</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: SoftLand - v4.7.0
+  * Template URL: https://bootstrapmade.com/softland-bootstrap-app-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+   <style>
+    
+    .update4 {
+        width: 80%;
+        margin-top: 10px;
+        margin-left:auto;
+        /* Add your existing styles for the update div here */
+    }
+
+    .updatetable {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-left: 100px; /* Center the table horizontally */
+    }
+
+    .updatetable, th, td {
+        border: 1px solid #ccc;
+    }
+
+    .updatetable th, .updatetable td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .updatetable th {
+        background-color: black;
+        color: white;
+    }
+
+    .update2 {
+        width: 90%;
+        margin: 50px;
+    }
+
+    .updatetable2 {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        margin-left: 0px; /* Center the table horizontally */
+    }
+
+    .updatetable2 th, .updatetable2 td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .updatetable2 thead {
+        background-color: #F9E975;
+    }
+
+    .updatetable2 tbody tr:nth-child(even) {
+        background-color: #F9E975;
+    }
+    .updatetable tr{
+        color: black;
+    }
+
+
+    .updatetable2 th {
+        background-color: black;
+        color: white;
+    }
+    .gr-marquee{
+        background-color: black;
+
+    }
+    
+    }
+    .update3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top:10px;
+    margin-bottom:20px;
+    
+}
+.update3 table td {
+    text-align: center; /* Center the content horizontally */
+    vertical-align: middle; /* Center the content vertically */
+    padding: 10px; /* Add padding for better appearance */
+}
+.update3 thead{
+    font-size:30px;
+}
+.updatetable4 {
+        width: 80%;
+        border-collapse: collapse;
+        margin-top: auto;
+        margin-left: 0px; /* Center the table horizontally */
+    }
+.updatetable4 th {
+        background-color: #F71919;
+        color: white;
+    }
+.updatetable4 tr {
+        background-color: #F9E975;
+        color: black;
+    }
+
+
+.updatetable3 th {
+        background-color: #F9E975;
+        color: white;
+    }
+    .updatetable3 {
+        width: 80%;
+        border-collapse: collapse;
+        margin-top: 30px;
+        margin-left: 0px; /* Center the table horizontally */
+    }
+    .update3 table td:first-child {
+    background-color: #F9E975;
+    font-size:25px;
+}
+.update3 table td{
+    padding: auto;
+    margin: auto;
+}
+.waitimg {
+        /* Add your CSS styles here */
+        width: 50px; /* Adjust the width as needed */
+        height: 50px; /* Adjust the height as needed */
+    }
+ .disclaimer {
+            background-color: #F9E975;
+            border: 1px solid #F9E975;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .disclaimer p {
+            margin: 0;
+        }
+.updatetable3 th {
+    background-color: #F71919;
+    color: white;
+    font-weight: bold; /* Added for bold text */
+}
+
+.updatetable3 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold; /* Added for bold text */
+    width:33%;
+}
+.spanclass{
+    font-size:20px;
+}
+/* CSS for the result-span */
+.result-span {
+    font-size: 15px; /* Adjust the font size for yesterdayResult */
+}
+
+/* CSS for today result */
+.result-span.today {
+    font-size: 22px; /* Adjust the font size for todayResult */
+    font-weight: bold; /* Apply bold style */
+}
+
+
+
+
+
+     /* Media Queries for Mobile Responsiveness */
+        @media only screen and (max-width: 768px) {
+            .update4, .update2, .update3, .add {
+                width: 100%;
+                height:100%;
+                margin: 0;
+                padding:0;
+                overflow-x:hidden;
+            }
+            .update3{
+                margin-top:90px;
+            }
+
+            .updatetable, .updatetable2, .updatetable3, .updatetable4 {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .updatetable th, .updatetable td, .updatetable2 th, .updatetable2 td, 
+            .updatetable3 th, .updatetable3 td, .updatetable4 th, .updatetable4 td {
+                font-size: 25px;
+                padding: 8px;
+                width: 33%;
+            }
+
+            .logo img {
+                width: 100%;
+            }
+
+            .gr-marquee h1 {
+                font-size: 14px;
+            }
+
+            .disclaimer p {
+                font-size: 12px;
+            }
+            .update4 {
+            width: 100%;
+            margin: 0;
+            overflow-x: auto; /* Enable horizontal scrolling on small screens */
+        }
+
+        .updatetable4 {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .updatetable4 th, .updatetable4 td {
+            font-size: 14px;
+            padding: 8px;
+            width: auto; /* Allow content to determine width */
+        }
+
+        .updatetable4 th:first-child,
+        .updatetable4 td:first-child {
+            position: sticky;
+            left: 0;
+            background-color: #F71919; /* Adjust background color as needed */
+            color: white; /* Adjust text color as needed */
+        }
+
+        .updatetable4 thead th {
+            position: sticky;
+            top: 0;
+            background-color: #F71919; /* Adjust background color as needed */
+            color: white; /* Adjust text color as needed */
+        }
+
+        /* Additional styles as needed for better mobile display */
+    }
+        }
+ .updatetable3 th {
+        background-color: blue;
+        color: white;
+        font-weight: bold; /* Added for bold text */
+    }
+
+    .updatetable3 td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        font-weight: bold; /* Added for bold text */
+    }
+
+    .updatetable4 th {
+        background-color: blue;
+        color: white;
+        font-weight: bold; /* Added for bold text */
+    }
+
+    .updatetable4 td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        font-weight: bold; /* Added for bold text */
+    }
+    .top{
+        margin-bottom:20px;
+    }
+    .add{
+        text-align: center;
+        width:auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-weight:bold;
+        font-size:20px;
+    }
+    .upcoming-place {
+    text-align: center;
+    color: yellow; /* Set your preferred color for upcoming places */
+    margin: 10px 0;
+    font-weight:bold;
+    font-size:15px;
+}
+.upcoming-place strong {
+    font-size: 15px; /* Set your preferred font size for the strong elements */
+    display: block;
+}
+
+.upcoming {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    gap:5px;
+}
+
+.upcoming h2 {
+    background-color: green; /* Default background color for the text */
+    color: black; /* Default text color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px; /* Padding around the text */
+    text-decoration: none; /* Remove underline */
+    margin: 2px; /* Add margin between items */
+    transition: background-color 1s, color 1s; /* Transition effect for background color and text color */
+}
+
+.upcoming h.change {
+    background-color: white; /* New background color for the text */
+    color: yellow; /* New text color */
+}
+
+/* Animation to toggle the class after 2.5 seconds */
+/* Animation to toggle the class after 2.5 seconds */
+@keyframes changeColor {
+    0% {
+        opacity: 1;
+        color:white;
+    }
+    25% {
+        opacity: 0; /* Fade out quickly */
+    }
+    50% {
+        opacity: 1; /* Fade in quickly */
+        color:green;
+        background-color:white;
+    }
+    75% {
+        opacity: 0; /* Fade out quickly */
+    }
+    100% {
+        opacity: 1;
+        color:white;
+    }
+}
+
+.upcoming h2 {
+    animation: changeColor 3s 0.5s infinite forwards; /* Apply animation to toggle class after 2.5 seconds */
+}
+
+
+
+
+.add{
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    border: dashed red;
+    background: linear-gradient(to bottom, #ffd800, #ffffff);
+    border-radius: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    width:auto;
+}
+
+.bar{
+    margin:20px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+     justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between;
+    height:80%;
+    
+}
+.upcoming {
+        width: auto; /* Adjust the width as needed */
+    }
+
+</style>
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <h1>Results Site</h1>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1><a href="index.php">Satta King <sup>Result</sup></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active " href="index.php">Home</a></li>
+          <li><a href="chart.php">Chart</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
-  </header>
-  <main>
-    <div class="container" id="resultsContainer">
-      <h2>Results</h2>
-      <div id="results"></div>
-    </div>
-  </main>
-  <footer>
+  </header><!-- End Header -->
+  
+  
+
+
+    <style>
+    .body{
+        color:black;
+    }
+    
+    .update4 {
+        width: 80%;
+        margin-top: 10px;
+        margin-left:auto;
+        /* Add your existing styles for the update div here */
+    }
+
+    .updatetable {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-left: 100px; /* Center the table horizontally */
+    }
+
+    .updatetable, th, td {
+        border: 1px solid #ccc;
+    }
+
+    .updatetable th, .updatetable td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .updatetable th {
+        background-color: black;
+        color: white;
+    }
+
+    .update2 {
+        width: 90%;
+        margin: 50px;
+    }
+
+    .updatetable2 {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0px; /* Center the table horizontally */
+    }
+
+    .updatetable2 th, .updatetable2 td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .updatetable2 thead {
+        text-align: center;
+        background-color: #F9E975;
+    }
+
+    .updatetable2 tbody tr:nth-child(even) {
+        text-align: center;
+        background-color: #F9E975;
+    }
+    .updatetable tr{
+        text-align: center;
+        color: black;
+    }
+
+
+    .updatetable2 th {
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+    .gr-marquee{
+        background-color: black;
+
+    }
+    
+    .update3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top:90px;
+    margin-bottom:100px;
+    
+}
+.update3 table td {
+    text-align: center; /* Center the content horizontally */
+    vertical-align: middle; /* Center the content vertically */
+    padding: 10px; /* Add padding for better appearance */
+}
+.update3 thead{
+    font-size:30px;
+}
+.updatetable4 {
+        width: 80%;
+        border-collapse: collapse;
+        margin-top: auto;
+        margin-left: 0px; /* Center the table horizontally */
+         border-radius: 25px;
+         overflow: hidden;
+    }
+.updatetable4 th {
+        background-color: #F71919;
+        color: white;
+        border: 1px solid #dddddd;
+    }
+.updatetable4 tr {
+        background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
+        color: black;
+        
+    }
+
+
+.updatetable3 th {
+        background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        color: white;
+    }
+    .updatetable3 {
+        width: 80%;
+        border-collapse: collapse;
+        margin-top: 30px;
+        margin-left: 0px; /* Center the table horizontally */
+         border-radius: 30px;
+         overflow: hidden;
+    }
+    .update3 table td:first-child {
+   background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
+    font-size:5px;
+}
+.update3 table td{
+    padding: auto;
+    margin: auto;
+}
+.waitimg {
+        /* Add your CSS styles here */
+        width: 50px; /* Adjust the width as needed */
+        height: 50px; /* Adjust the height as needed */
+    }
+ .disclaimer {
+            background-color: #F9E975;
+            border: 1px solid #F9E975;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .disclaimer p {
+            margin: 0;
+        }
+.updatetable3 th {
+   background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    color: white;
+    font-weight: bold; /* Added for bold text */
+}
+
+.updatetable3 td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: center;
+    font-weight: bold; /* Added for bold text */
+    width:33%;
+}
+.spanclass{
+    font-size:20px;
+}
+/* CSS for the result-span */
+.result-span {
+    font-size: 15px; /* Adjust the font size for yesterdayResult */
+}
+
+/* CSS for today result */
+.result-span.today {
+    font-size: 22px; /* Adjust the font size for todayResult */
+    font-weight: bold; /* Apply bold style */
+}
+.bar{
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+     justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between;
+    
+}
+
+
+
+
+     /* Media Queries for Mobile Responsiveness */
+        @media only screen and (max-width: 768px) {
+            .update4, .update2, .update3, .add {
+                width: 100%;
+                height:100%;
+                margin: 0;
+                padding:0;
+                overflow-x:hidden;
+            }
+            .update3{
+                margin-top:5px;
+            }
+
+            .updatetable, .updatetable2, .updatetable3, .updatetable4 {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .updatetable th, .updatetable td, .updatetable2 th, .updatetable2 td, 
+            .updatetable3 th, .updatetable3 td, .updatetable4 th, .updatetable4 td {
+                font-size: 25px;
+                padding: 8px;
+                width: 33%;
+            }
+
+            .logo img {
+                width: 100%;
+            }
+
+            .gr-marquee h1 {
+                font-size: 14px;
+            }
+
+            .disclaimer p {
+                font-size: 12px;
+            }
+            .update4 {
+            width: 100%;
+            margin: 0;
+            overflow-x: auto; /* Enable horizontal scrolling on small screens */
+        }
+
+       .updatetable4 {
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: auto;
+    margin-left: auto; /* Center the table horizontally */
+    overflow: auto; /* Allow scrolling */
+}
+
+.updatetable4 th,
+.updatetable4 td {
+    border: 1px solid #dddddd;
+    padding: 4px;
+    text-align: center;
+    font-weight: bold; /* Added for bold text */
+}
+
+.updatetable4 th:first-child,
+.updatetable4 td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2; /* Ensure it appears above other content */
+    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%); /* Adjust background color as needed */
+    color: white; /* Adjust text color as needed */
+}
+
+.updatetable4 thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Ensure it appears above other content */
+    background-color: linear-gradient(to top, #ff0844 0%, #ffb199 100%); /* Adjust background color as needed */
+    color: white; /* Adjust text color as needed */
+}
+.spanclass{
+    font-size:17px;
+}
+.small-time {
+    font-size: 1px;/* Adjust the font size as needed */
+    color:red;
+    display: block;
+    
+}
+
+        /* Additional styles as needed for better mobile display */
+    }
+        }
+ .updatetable3 th {
+        background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        color: white;
+        font-weight: bold; /* Added for bold text */
+    }
+
+    .updatetable3 td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        font-weight: bold; /* Added for bold text */
+        color:black;
+    }
+
+    .updatetable4 th {
+        background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        color: white;
+        font-size: 12px;
+        font-weight: bold; /* Added for bold text */
+    }
+
+    .updatetable4 td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold; /* Added for bold text */
+    }
+    .top{
+        margin-bottom:20px;
+    }
+    .add{
+        text-align: center;
+        width:auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-weight:bold;
+        font-size:20px;
+        color:black;
+    }
+    .upcoming-place {
+    text-align: center;
+    justify-content: center;
+    color: yellow; /* Set your preferred color for upcoming places */
+    margin: 10px 0;
+    font-weight:bold;
+    font-size:15px;
+}
+.upcoming-place strong {
+    text-align: center;
+    font-size: 15px; /* Set your preferred font size for the strong elements */
+    justify-content: center;
+    display: block;
+}
+
+.upcoming {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    gap:10px;
+}
+
+.upcoming h2 {
+    background-color: green; /* Default background color for the text */
+    color: black; /* Default text color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px; /* Padding around the text */
+    text-decoration: none; /* Remove underline */
+    margin: 2px; /* Add margin between items */
+    transition: background-color 1s, color 1s; /* Transition effect for background color and text color */
+}
+
+.upcoming h.change {
+    background-color: white; /* New background color for the text */
+    color: yellow; /* New text color */
+}
+
+/* Animation to toggle the class after 2.5 seconds */
+/* Animation to toggle the class after 2.5 seconds */
+@keyframes changeColor {
+    0% {
+        opacity: 1;
+        color:white;
+    }
+    25% {
+        opacity: 0; /* Fade out quickly */
+    }
+    50% {
+        opacity: 1; /* Fade in quickly */
+        color:green;
+        background-color:white;
+    }
+    75% {
+        opacity: 0; /* Fade out quickly */
+    }
+    100% {
+        opacity: 1;
+        color:white;
+    }
+}
+
+.upcoming h2 {
+    animation: changeColor 3s 0.5s infinite forwards; /* Apply animation to toggle class after 2.5 seconds */
+}
+
+
+
+
+.add{
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    border: dashed red;
+    background: linear-gradient(to bottom, #ffd800, #ffffff);
+    border-radius: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    width:auto;
+}
+
+
+.upcoming {
+        width: auto; /* Adjust the width as needed */
+    }
+#header.header-scrolled {
+    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    height: 60px;
+}
+.body{
+        color:black;
+    }
+#header{
+    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    margin-bottom:50px;
+    height: 60px;
+}
+.updatetable4 td:first-child {
+            background: linear-gradient(to top, #ff0844 0%, #ffb199 100%); /* Adjust background color as needed */
+            color: white; /* Adjust text color as needed */
+        }
+.small-time {
+    font-size: 15px;/* Adjust the font size as needed */
+    color:red;
+}
+.updatetable3 th {
+    text-align: center; /* Center the text horizontally */
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+    <div class="top">
+<head>
+    <br>
+
+<br>
+<div class='bar'>
+    <div class="upcoming" style="margin-bottom: -10px;"> <!-- Adjusted margin here --><br>
+        <h2>LIVE RESULT</h2>
+        13/07/24 - 10:41:30 PM<div class='latest-update' style='text-align: center;'><h3 style='color: Black; font-weight: bold; margin: 0;'>Shri Khatu Shyam</h3><h3 style='color: red; font-weight: bold; margin: 0;'>48</h3></div><div class='upcoming'><p style='margin: 0;'><h3 style='color: Black; font-weight: bold; margin: 0; display: inline-block; vertical-align: middle; line-height: 1;'>Gajiyabaad</h3><span style='display: inline-block; vertical-align: middle;'><img src='wait.gif' height='60px'></span></p></div>    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="top">
+<head>
+
+    <div class="resultbackground">
+        
+<div class="update3" id="update3">
+    <table class="updatetable3">
+        <thead>
+            <tr>
+                <th>Games</th>
+                <th>OLD</th>
+                <th>NEW</th>
+            </tr>
+        </thead>
+        <tbody>
+<tr><td><span class="spanclass">Disawar</span><br><span class="small-time">5:10 AM</span></td><td><span class="result-span yesterday">64</span></td><td><span class="result-span today">14</span></td></tr><tr><td><span class="spanclass">Delhi King</span><br><span class="small-time">1:55 PM</span></td><td><span class="result-span yesterday">49</span></td><td><span class="result-span today">91</span></td></tr><tr><td><span class="spanclass">Delhi Bazar</span><br><span class="small-time">3:10 PM</span></td><td><span class="result-span yesterday">59</span></td><td><span class="result-span today">39</span></td></tr><tr><td><span class="spanclass">Shri Ganesh</span><br><span class="small-time">4:40 PM</span></td><td><span class="result-span yesterday">25</span></td><td><span class="result-span today">25</span></td></tr><tr><td><span class="spanclass">Faridabaad</span><br><span class="small-time">6:10 PM</span></td><td><span class="result-span yesterday">83</span></td><td><span class="result-span today">52</span></td></tr><tr><td><span class="spanclass">Shri Khatu Shyam</span><br><span class="small-time">7:30 PM</span></td><td><span class="result-span yesterday">95</span></td><td><span class="result-span today">48</span></td></tr><tr><td><span class="spanclass">Gajiyabaad</span><br><span class="small-time">9:05 PM</span></td><td><span class="result-span yesterday">92</span></td><td><span class="result-span today"><img src="wait.gif" alt="Wait" class="waitimg"></span></td></tr><tr><td><span class="spanclass">Haryana Bazar</span><br><span class="small-time">10:30 PM</span></td><td><span class="result-span yesterday">17</span></td><td><span class="result-span today"><img src="wait.gif" alt="Wait" class="waitimg"></span></td></tr><tr><td><span class="spanclass">Gali</span><br><span class="small-time">11:55 PM</span></td><td><span class="result-span yesterday">53</span></td><td><span class="result-span today"><img src="wait.gif" alt="Wait" class="waitimg"></span></td></tr></tbody></table>
+
+
+
+        </div>
+
+
+
+
+
+                </div>
+
+        </div>
+        <br>
+
+   <div class='add'><p>If you run your own Satta (Matka) and want to get its result posted on our site, then contact us.
+
+Here you can have full command of your game as an admin, that is, you will not have to ask anyone for game updates..
+
+-: Message to get your game posted :-
+
+(Message only to get your game posted on the site. Those who ask for any leaked number or fixed game should not waste your and our time.)</p><a href='https://wa.me/+919996004285'><img src='wpchat.png' alt='https://wa.me/+919996004285' style='width:150px;height:60px;'></a></div>
+
+
+
+<br>
+<div class="update4" id="update4">
+
+    <table class="updatetable4">
+        <thead>
+            <tr>
+                <th colspan="32" style="font-size: 32px; text-align: center;" id="monthHeading">
+    July 2024</th>
+
+                <!-- Use colspan to span across all columns -->
+            </tr>
+            <tr>
+                <th></th> <!-- Empty cell for alignment -->
+                <th>Disawar</th><th>Delhi King</th><th>Delhi Bazar</th><th>Shri Ganesh</th><th>Faridabaad</th><th>Shri Khatu Shyam</th><th>Gajiyabaad</th><th>Haryana Bazar</th><th>Gali</th>            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>--</td><td>10</td><td>98</td><td>41</td><td>18</td><td>05</td><td>30</td><td>37</td><td>41</td></tr><tr><td>2</td><td>90</td><td>49</td><td>14</td><td>25</td><td>98</td><td>57</td><td>46</td><td>24</td><td>74</td></tr><tr><td>3</td><td>34</td><td>72</td><td>86</td><td>90</td><td>00</td><td>91</td><td>07</td><td>35</td><td>09</td></tr><tr><td>4</td><td>59</td><td>90</td><td>48</td><td>86</td><td>47</td><td>46</td><td>29</td><td>18</td><td>93</td></tr><tr><td>5</td><td>21</td><td>23</td><td>34</td><td>40</td><td>76</td><td>03</td><td>02</td><td>41</td><td>71</td></tr><tr><td>6</td><td>90</td><td>56</td><td>56</td><td>16</td><td>72</td><td>27</td><td>36</td><td>05</td><td>26</td></tr><tr><td>7</td><td>02</td><td>37</td><td>88</td><td>76</td><td>63</td><td>54</td><td>76</td><td>93</td><td>76</td></tr><tr><td>8</td><td>80</td><td>08</td><td>49</td><td>94</td><td>31</td><td>40</td><td>50</td><td>06</td><td>27</td></tr><tr><td>9</td><td>01</td><td>50</td><td>59</td><td>92</td><td>23</td><td>94</td><td>61</td><td>71</td><td>96</td></tr><tr><td>10</td><td>93</td><td>46</td><td>97</td><td>72</td><td>61</td><td>52</td><td>84</td><td>37</td><td>97</td></tr><tr><td>11</td><td>43</td><td>12</td><td>51</td><td>29</td><td>10</td><td>02</td><td>64</td><td>24</td><td>69</td></tr><tr><td>12</td><td>64</td><td>49</td><td>59</td><td>25</td><td>83</td><td>95</td><td>92</td><td>17</td><td>53</td></tr><tr><td>13</td><td>14</td><td>91</td><td>39</td><td>25</td><td>52</td><td>48</td><td>--</td><td>--</td><td>--</td></tr><tr><td>14</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>15</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>16</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>17</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>18</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>19</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>20</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>21</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>22</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>23</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>24</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>25</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>26</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>27</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>28</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>29</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr><tr><td>30</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td></tr>        </tbody>
+    </table>
+</div>
+<script>
+    function changeMonth() {
+        var month = document.getElementById("month").value;
+        var year = document.getElementById("year").value;
+
+        // Check if both month and year are selected
+        if (month && year) {
+            // Redirect to the same page with the selected month and year as query parameters
+            window.location.href = window.location.pathname + '?month=' + month + '&year=' + year + '#update4'; // Added #update4 for redirecting to update4 section
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+   <script>
+    // Function to adjust space between update3 and update4
+    function adjustSpace() {
+        var update3 = document.getElementById('update3');
+        var update4 = document.querySelector('.update4');
+
+        if (update3 && update4) {
+        var update3Height = update3.offsetHeight;
+        // Adjust the factor as needed, e.g., multiply by 0.8
+        update4.style.marginTop = (update3Height * 0.5) + 'px';
+    }
+
+    // Call the adjustSpace function when the page has fully loaded
+    window.addEventListener('load', adjustSpace);
+    // Also, listen for window resize events to adjust space dynamically
+    window.addEventListener('resize', adjustSpace);
+</script>
+
+<div style="width:60px;height:60px;position:fixed;right:20px;bottom:20px;">
+<a href="https://wa.me/919996004285"><img src="wplogo.png" style="width:70px;heigth:70px;" />></a>
+</div>
+<script src="nav.js"></script>
+
+
+</body>
+
+</html>
+
+
+  <!-- ======= Footer ======= -->
+<footer class="footer" role="contentinfo">
     <div class="container">
-      <p>&copy; 2024 Results Site</p>
+<div style="text-align: center;" id="clock">
+    
+    <a href="//www.dmca.com/Protection/Status.aspx?ID=f4f82b50-082d-4a4e-a5ce-03c6d26e6a49" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/DMCA_logo-200w_a.png?ID=f4f82b50-082d-4a4e-a5ce-03c6d26e6a49"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+    
+    <br></br>
+           <h3 style="color:#F71919;"> ||DISCLAIMER||</h3>
+<p style="color:#F71919;">Viewing This Website Is Your Own Risk, All The Information Shown On Website Is Sponsored And We Warn You That Matka Gambling/Satta May Be Banned Or Illegal In Your Country…, We Are Not Responsible For Any Issues Or Scam…, We Respect All Country Rules/Laws… If You Not Agree With Our Site Disclaimer… Please Quit Our Site Right Now. Thank You</p>
+        </div>
+
+      <div class="row justify-content-center text-center">
+        <div class="col-md-7">
+          <p class="copyright">
+              2024              &copy; Copyright Satta King Result. All Rights Reserved</p>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=SoftLand
+          -->
+            Designed by <a href="https://resultsattaking.site">Satta King result</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </footer>
-  <script src="script.js"></script>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+
 </body>
-</html>
+
+</html><!-- Vendor JS Files -->
+<script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
