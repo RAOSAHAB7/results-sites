@@ -1,19 +1,523 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deepanshu Yadav's UPI Payment Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9546893092793579"
+<!-- Links Imported -->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>UPI Payment Link Maker - Apgy Tools</title>
+<link rel="canonical" href="https://tools.apgy.in/tool/upi-payment-link-maker/" />
+
+<meta name="title" content="UPI Payment Link Maker - Apgy Tools">
+<meta name="description" content="This tool will help you create unlimited UPI payment links for free without any signup.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tools.apgy.in/tool/upi-payment-link-maker/">
+<meta property="og:title" content="UPI Payment Link Maker - Apgy Tools">
+<meta property="og:description" content="This tool will help you create unlimited UPI payment links for free without any signup.">
+<meta property="og:image" content="https://tools.apgy.in/img/upi-payment-link-maker.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://tools.apgy.in/tool/upi-payment-link-maker/">
+<meta property="twitter:title" content="UPI Payment Link Maker - Apgy Tools">
+<meta property="twitter:description" content="This tool will help you create unlimited UPI payment links for free without any signup.">
+<meta property="twitter:image" content="https://tools.apgy.in/img/upi-payment-link-maker.jpg">
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    "name": "UPI Payment Link Maker",
+    "image": "https://tools.apgy.in/img/upi-payment-link-maker.jpg",
+    "description": "This tool will help you create unlimited UPI payment links for free without any signup.",
+    "url": "https://tools.apgy.in/tool/upi-payment-link-maker/",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "3210"
+    }
+  }
+
+</script>
+
+<style>
+      .error {
+        position: relative;
+        animation: shake 0.1s linear;
+        animation-iteration-count: 3;
+      }
+
+      @keyframes shake {
+        0% {
+          left: -5px;
+        }
+        100% {
+          right: -5px;
+        }
+      }
+</style>
+<!-- Head Tags -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1" name="viewport" />
+<link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link href="https://tools.apgy.in/includes/custom-stylesheet.css?v=1" rel="stylesheet" />
+<link href="https://tools.apgy.in/includes/fa/css/all.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js" defer></script>
+
+<script src="/includes/yall.js"></script>
+<meta property="fb:app_id" content="1053924988749839" />
+<script>
+document.addEventListener("DOMContentLoaded", yall);
+</script>
+<link rel="apple-touch-icon" sizes="57x57" href="/includes/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/includes/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/includes/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/includes/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/includes/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/includes/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/includes/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/includes/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/includes/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/includes/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/includes/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/includes/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/includes/favicon/favicon-16x16.png">
+<link rel='shortcut icon' type='image/x-icon' href='/includes/favicon/favicon.ico' />
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/includes/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="manifest" href="/includes/favicon/manifest.json">
+<script src="/pwa-script.js"></script>
+<script> window._izq = window._izq || []; window._izq.push(["init"]); </script>
+<script src="https://cdn.izooto.com/scripts/a7ffefa53ead406d1dbdde30beb1dde3b6de9b39.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9546893092793579"
      crossorigin="anonymous"></script>
-    <meta property="og:image" content="https://aslisachin.github.io/nvd-coins/files/img/upi-logo.jpg">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7X8WEB2CBD"></script>
-    <meta name="robots" content="noindex" />
-    <meta property="fb:app_id" content="1053924988749839" />
-    <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9546893092793579" crossorigin="anonymous"></script>-->
+         </head>
+    <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars font-ubuntu" data-set-preferred-mode-onload="true" onload="LoadFunction();">
+<div id="loader"></div>
+<div 
+    class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom" 
+    data-sidebar-type="full-height">
+<div class="sticky-alerts"></div>
+<!-- Nav Bar -->
+<nav class="navbar">
+      <div class="navbar-content">
+        <button class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <span class="sr-only">Toggle sidebar</span>
+        </button>
+      </div>
+      <!-- Navbar brand -->
+      <a href="https://tools.apgy.in" class="navbar-brand link">
+        <img src="https://tools.apgy.in/img/at-nav.png" alt="ApgyTools">
+      </a>
+      
+      <ul class="navbar-nav d-none d-md-flex">
+        <li class="nav-item">
+          <a class="nav-link" onclick="callInstallPrompt()">Install</a>
+        </li>
+      </ul>
+      <div class="navbar-content ml-auto">
+      
+      
+        <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()" id="loadingBTN">
+          <!--<i class="far fa-moon hidden-dm" aria-hidden="true"></i>-->
+          <!--<i class="far fa-sun hidden-lm" aria-hidden="true"></i>-->
+          <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+          <span class="sr-only">Toggle dark mode</span>
+        </button>
+      
+      
+      </div>
+      
+      <div class="d-md-none">
+      
+        <div class="dropdown with-arrow">
+          <button class="btn" data-toggle="dropdown" type="button" id="navbar-dropdown-toggle-btn-1">
+            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right w-200" aria-labelledby="navbar-dropdown-toggle-btn-1">
+            <a class="dropdown-item" onclick="callInstallPrompt()">Install</a>
+            <div class="dropdown-divider"></div>
+            <a onclick="share()" class="dropdown-item">Share</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://tools.apgy.in/pages/donate/">Donate</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+<!-- Side Bar -->
+<div class="sidebar">
+  <div class="sidebar-menu">
+    <!-- Sidebar brand -->
+    <a href="https://tools.apgy.in" class="sidebar-brand">
+      <img src="/img/at.png" alt="Apgy Tools">
+      Apgy Tools
+    </a>
+    <!-- Sidebar content with the search box -->
+    <div class="sidebar-content">
+        <form action="/functions/search/">
+            <input type="search" class="form-control" name="q" placeholder="Search" autocomplete="off">
+        </form>
+    </div>
+    <h5 class="sidebar-title">Tools</h5>
+    <div class="sidebar-divider"></div>
+    
+    <a href="https://tools.apgy.in/tool/youtube-app-link/" title="YouTube App Link Maker" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="fab fa-youtube" aria-hidden="true"></i>
+      </span>
+      YT Link Maker
+    </a>
+    
+    <a href="https://tools.apgy.in/tool/age-calculator/" title="Age Calculator" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="fas fa-calculator" aria-hidden="true"></i>
+      </span>
+      Age Calculator
+    </a>
+    
+    <a href="https://tools.apgy.in/tool/whatsapp-chat-opener/" title="WhatsApp Chat Opener" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+      </span>
+      WA Chat Opener
+    </a>
+    
+    <a href="https://tools.apgy.in/tool/qr-code-maker/" title="QR Code Maker" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="fas fa-qrcode" aria-hidden="true"></i>
+      </span>
+      QR Code Maker
+    </a>
+    
+    <a href="https://tools.apgy.in/tool/online-speedometer/" title="Online Speedometer" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+      </span>
+      Speedometer
+    </a>
+    
+    <br/>
+    <h5 class="sidebar-title">Pages</h5>
+    <div class="sidebar-divider"></div>
+    <a href="/blog/" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="fas fa-blog" aria-hidden="true"></i>
+      </span>
+      Blog
+    </a>
+    <a href="/milestone/" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="far fa-flag" aria-hidden="true"></i>
+      </span>
+      Milestones
+    </a>
+    <div id="androidappbutton" style="display:none;">
+    <a href="/pages/app/" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="fab fa-android" aria-hidden="true"></i>
+      </span>
+      Android App
+    </a>
+    </div>
+    <a href="https://tools.apgy.in/pages/about/" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="far fa-address-card" aria-hidden="true"></i>
+      </span>
+      About
+    </a>
+    <a href="https://tools.apgy.in/pages/contact/" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="far fa-comment-alt" aria-hidden="true"></i>
+      </span>
+      Contact
+    </a>
+    <div id="ShowDIV" style="display:none;">
+    <a href="https://tools.apgy.in/pages/privacy-policy/" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="far fa-file-alt" aria-hidden="true"></i>
+      </span>
+      Privacy Policy
+    </a>
+    <a href="https://tools.apgy.in/pages/terms-and-conditions/" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="far fa-file-alt" aria-hidden="true"></i>
+      </span>
+      Terms & Conditions
+    </a>
+    <a href="https://tools.apgy.in/pages/disclaimer/" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="far fa-file-alt" aria-hidden="true"></i>
+      </span>
+      Disclaimer
+    </a>
+    </div>
+    <a onclick='$("#ShowDIV").toggle();' class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="fas fa-angle-up" aria-hidden="true"></i>
+      </span>
+      <span id="ShowLinksButton">Show More</span>
+    </a>
+    <br/>
+    <h5 class="sidebar-title">App Info</h5>
+    <div class="sidebar-divider"></div>
+    
+    <a href="https://tools.apgy.in/pages/changelog/" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="far fa-file-alt" aria-hidden="true"></i>
+      </span>
+      Changelog
+    </a>
+    
+    <a href="https://stats.uptimerobot.com/YJ6ApFk3Gx" class="sidebar-link sidebar-link-with-icon">
+      <span class="sidebar-icon">
+        <i class="fas fa-plug" aria-hidden="true"></i>
+      </span>
+      Status
+    </a>
+    
+    <div class="sidebar-link sidebar-link-with-icon">
+        <span class="sidebar-icon">
+        <i class="fas fa-history" aria-hidden="true"></i>
+        </span>
+        Jul 14 2024 / 09:16 pm    </div>
+    
+    <a class="sidebar-link sidebar-link-with-icon" href="/pages/profile/">
+        <span class="sidebar-icon">
+        <i class="fas fa-user" aria-hidden="true"></i>
+        </span>
+        <span id="userIDContainer">USERNAME</span>
+    </a>
+    
+  </div>
+</div>      
+<!-- Sidebar end -->    <div class="content-wrapper">
+        <div class="container">
+                <div class="content">
+                    <h1 class="content-title">
+                        UPI Payment Link Maker
+                    </h1>
+                    <p>This tool will help you create unlimited UPI payment links for free without any signup.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card card-border shadow">
+        <div class="form-group">
+          <label for="pn" class="required">Reciever Name</label>
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="pn"
+            placeholder="Name"
+            required="required"
+          />
+          <div class="form-text">
+            Don't use any special characters in your name.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="pa" class="required">VPA (UPI ADDRESS)</label>
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="pa"
+            placeholder="VPA (UPI ADDRESS)"
+            required="required"
+          />
+          <div class="form-text">
+            Your VPA (UPI ADDRESS) i.e. aslisachin@upi
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="amt">Amount (Optional)</label>
+          <input
+            type="number"
+            class="form-control form-control-lg"
+            id="amt"
+            placeholder="Amount (Optional)"
+            required="required"
+          />
+          <div class="form-text">Only anumeric characters allowed.</div>
+        </div>
+
+        <button class="btn btn-block btn-lg shadow" id="genbutton">
+          Generate
+        </button>
+                        </div>
+                        
+<div id="result" style="display: none">
+    <div class="card card-border shadow">
+                            <div class="text-center">
+                                <h3 class="card-title">👍 Your UPI Link is Generated Successfully</h3>
+                            </div>
+                                <div class="input-group">
+                                <input type="text" id="link" class="form-control form-control-lg" value="" readonly>
+                                <div class="input-group-append">
+                                <button class="btn btn-lg" type="button" onclick="copy()"><i class="far fa-copy"></i> Copy</button>
+                                </div>
+                                </div>
+                                
+                                
+                                <div class="text-center mt-20">
+                                <a href="" id="linkpreview" target="_blank" class="btn btn-lg">Preview <i class="fas fa-share"></i></a>
+                                </div>
+    </div>
+</div>
+                        
+                        <div id="addd1" class="m-10">
+                        </div>
+                        
+                        <div class="content">
+                            <p>UPI payment link maker helps you create an unlimited number of payment links for free. You can customize the amount, name and even VPA (UPI address) for every link.</p>
+                            
+                            <h2 class="content-title">How To Use UPI Link Maker?</h2>
+                            
+                            <p>To use UPI (<b>Unified Payments Interface</b>) payment link maker, all you need is your VPA (UPI address).</p>
+                            
+                            <p>Copy your VPA from your preferred UPI payment app. Paste that VPA here in the VPA box and fill in your name.</p>
+                            
+                            <p>Entering the amount is optional, you can fill the amount box only if you want to receive a fixed amount from your recipients.</p>
+                            
+                            <p>After all the steps click on Generate button to get your payment link.</p>
+                            
+                            <p>Voila, now you can share this link with anyone you want to receive payments from.</p>
+                        </div>
+                        
+                        <div class="card card-border shadow">
+                            <div align="center" class="">
+<a class="btn btn-action mr-5 mb-5" href=" https://wa.me/?text=UPI Payment Link Maker: https://tools.apgy.in/tool/upi-payment-link-maker/" target="_blank" rel="nofollow" title="Share on WhatsApp" style="color:#075E54;">
+    <i class="fab fa-whatsapp" area-hidden="true"></i>
+</a>
+<a class="btn btn-action mr-5 mb-5" href="https://twitter.com/intent/tweet?text=UPI Payment Link Maker: https://tools.apgy.in/tool/upi-payment-link-maker/" target="_blank" rel="nofollow" title="Tweet This" style="color:#1DA1F2;">
+    <i class="fab fa-twitter" area-hidden="true"></i>
+</a>
+<a class="btn btn-action mr-5 mb-5" href="https://telegram.me/share/url?url=https://tools.apgy.in/tool/upi-payment-link-maker/" target="_blank" rel="nofollow" title="Share On Telegram" style="color:#0088CC;">
+    <i class="fab fa-telegram-plane" area-hidden="true"></i>
+</a>
+<a class="btn btn-action mr-5 mb-5" href="https://pinterest.com/pin/create/button/?url=https://tools.apgy.in/tool/upi-payment-link-maker/" target="_blank" rel="nofollow" title="Pin This" style="color:#BD081C;">
+    <i class="fab fa-pinterest-p" area-hidden="true"></i>
+</a>
+<a class="btn btn-action mr-5 mb-5" href="https://www.facebook.com/sharer/sharer.php?u=https://tools.apgy.in/tool/upi-payment-link-maker/" target="_blank" rel="nofollow" title="Share on Facebook" style="color:#1877F2;">
+    <i class="fab fa-facebook-f" area-hidden="true"></i>
+</a>
+</div>                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sticky-sidebar">
+    <div class="card mb-10 shadow text-center card-border">
+        <div class="">
+            <b>Support ApgyTools</b>
+        </div>
+        <p>Help us keep our services up and running by contributing your love in the form of donations.</p>
+        <a href="https://tools.apgy.in/pages/donate/" class="btn" ><i class="fas fa-hand-holding-usd"></i> Donate Now</a>
+    </div>
+
+<div class="card shadow text-center card-border">
+        <img src="https://tools.apgy.in/img/at-play-store.webp" alt="Apgy Tools Android App" class="w-100 shadow-lg rounded">
+        <br>
+        <b>Apgy Tools</b>
+        <p>Is now available on Google Play Store for free, Install Now.</p>
+        <a href="https://tools.apgy.in/pages/app/" target="_blank" class="btn">
+            <i class="fab fa-google-play"></i> Install Now
+        </a>
+</div>
+<br/>
+</div>                    </div>
+                </div>
+        </div>
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card shadow text-center card-border">
+                    <img src="https://tools.apgy.in/img/upi-payment-link-maker.webp" alt="UPI Payments Link Maker" class="w-100 shadow-lg rounded">
+                    <br>
+                    <b>UPI Link Maker</b>
+                    <p>Check Out Our UPI Payments Link Maker.</p>
+                    <a href="https://tools.apgy.in/tool/upi-payment-link-maker/" target="_blank" class="btn">
+                    Try Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card card-border shadow">
+                    
+<div class="text-center">
+    <b>Random Tech Facts</b>
+    <p>
+        The vast majority of the world’s currency is digital    </p>
+</div>
+                        </div>
+            </div>
+            
+            <div class="col-lg-4">
+<div class="mw-full">
+  <div class="card p-0 shadow"> 
+    <img src="//tools.apgy.in/img/wa-channel-banner.jpg" class="w-full img-fluid rounded-top" alt="WhatsApp Channel"> 
+    <div class="content text-center">
+      <b>WhatsApp Channel</b>
+      <p>
+        Click On The Button Below To Join Our WhatsApp Channel and Stay Up To Date With All New Updates.
+      </p>
+        <a href="https://whatsapp.com/channel/0029Va7850x30LKTEmZbDR25" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Join</a>
+    </div>
+  </div>
+</div>                
+            </div>
+        </div>
+
+        <div class="text-center">
+            <p class="font-ubuntu">Made with &#x2764;&#xFE0F; by <a href="https://aslisachin.com">AsliSachin</a></p>
+        </div>
+    </div>
+</footer></div>
+
+<nav class="navbar navbar-fixed-bottom">
+    <div class="navbar-content">
+        <div class="dropdown dropup with-arrow">
+          <button class="btn" data-toggle="dropdown" type="button" id="navbar-fixed-bottom-dropdown-toggle">
+            Contact
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbar-fixed-bottom-dropdown-toggle">
+             <a href="https://t.me/ApgyTools" rel="noreferrer" target="_blank" class="dropdown-item"><i class="fab fa-telegram"></i> Telegram</a>
+            <div class="dropdown-divider"></div>
+            <a href="https://instagram.com/actualsachin" rel="noreferrer" target="_blank" class="dropdown-item"><i class="fab fa-instagram-square"></i> Instagram</a>
+            <div class="dropdown-divider"></div>
+            <a href="https://facebook.com/aslisachinsharma" rel="noreferrer" target="_blank" class="dropdown-item"><i class="fab fa-facebook-square"></i> Facebook</a>
+            <div class="dropdown-divider"></div>
+            <a href="https://twitter.com/actualsachin" rel="noreferrer" target="_blank" class="dropdown-item"><i class="fab fa-twitter-square"></i> Twitter</a>
+          </div>
+        </div>
+     </div>
+      <!-- Navbar brand -->
+      <a href="https://tools.apgy.in" class="navbar-brand ml-auto"> <!-- ml-auto = margin-left: auto -->
+        <img src="https://tools.apgy.in/img/at.png" alt="Apgy Tools">
+      </a>
+      <!-- Navbar text -->
+      <span class="navbar-text ml-auto"> <!-- ml-auto = margin-left: auto -->
+        &copy; Apgy Tools
+      </span>
+</nav></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://tools.apgy.in/app.js?v=4"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7X8WEB2CBD"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -21,95 +525,74 @@
 
   gtag('config', 'G-7X8WEB2CBD');
 </script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://aslisachin.github.io/nvd-coins/styles.css" />
-    <style>
-        a{
-            text-decoration: none;
-            color: var(--white);
-        }
-        a:visited{
-            text-decoration: none;
-            color: var(--white);
-        }
-        
-.animate-contain {
-	height: 40px;
-	overflow: hidden;
-	text-align: center;
-	margin-top: 10px;
-}
-.animated-text {
-	display: inline-block;
-	transition: 500ms all;
-	margin-top: 0;
-	animation: slide 10s infinite alternate ease-in-out;
-	color: #000;
-}
-.animated-text span {
-	display: block;
-	/*font-size: 20px;*/
-	padding:8px 5px;
-}
-@keyframes slide{
-	0%{margin-top:0;}
-	10%{margin-top:0;}
-	20%{margin-top:-40px;}
-	30%{margin-top:-80px;}
-	40%{margin-top:-120px;}
-	50%{margin-top:-140px;}
-	70%{margin-top:-120px;}
-  80%{margin-top:-80px;}
-  90%{margin-top:-40px;}
-  100%{margin-top:0;}
-}
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="main-dash">
-        <img src="https://aslisachin.github.io/nvd-coins/files/img/upi-logo.jpg" alt="" class="avatar" />
-        <p class="text-center mt-20 text-shadow">You Are Paying</p>
-        <h1 class="text-center mt-10 text-shadow">Deepanshu Yadav</h1>
-        <div class="animate-contain">
-		<div class="animated-text">
-			<span>⚠️You Are Paying To Deepanshu Yadav</span>
-            <span>⚠️Money will be debited from your account.</span>
-            <span>⚠️Name is not verified. Proceed with Caution.</span>
-			<span>⚠️आप पेमेंट कर रहे है।</span>
-			<span>⚠️आपके खाते से पैसा डेबिट हो जाएगा।</span>
-		</div>
-	    </div>
-        <div class="coins text-center mt-20">
-          <img
-            src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=upi%3A%2F%2Fpay%3Fcu%3DINR%26pa%3DBHARATPE.8G0X0U4J6C25532%40fbpe%26pn%3DDeepanshu+Yadav%26am%3D%26tn%3DProcessed+By+Apgy+Tools"
-            alt=""
-            width="50%"
-          />
-        </div>
 
-        <p class="text-center mt-10">Scan With Any UPI App</p>
-        <p class="text-center mt-10">or Click on <b>Pay Now</b> Button</p>
-      </div>
-      <div id="buttons">
-         <a href="upi://pay?cu=INR&pa=BHARATPE.8G0X0U4J6C25532@fbpe&pn=Deepanshu Yadav&am=&tn=Processed By Apgy Tools">
-             <button class="button btn-block mt-10" id="payBTN">Pay Now</button>
-         </a>
-      </div>
-      
-      <div id="buttons">
-         <a href="https://tools.apgy.in/tool/upi-payment-link-maker/">
-             <button class="another-button btn-block mt-10" id="payBTN">Create Your Own UPI Link</button>
-         </a>
-      </div>
-      
-      <br/>
-        <p class="text-center mt-10">Powered by <a href="https://tools.apgy.in/tool/upi-payment-link-maker/"><b>Apgy Tools</b></a></p>
-    </div>
+
+<script>
+    // Function to generate a unique ID
+    function generateUniqueID() {
+        // return 'apgy_' + Math.random().toString(36).substr(2, 9);
+        const adjectives = ['Panda', 'Lion', 'Bee', 'Horse', 'Cat', 'Dog', 'Duck', 'Monkey', 'Goat', 'Pig', 'Bear', 'Rabbit'];
+        const nouns = ['Sad', 'Happy', 'Angry', 'Surprised', 'Crazy', 'Proud', 'Lonely', 'Scared', 'Cheerful', 'Excited'];
+        const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+        const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
+        const funnyUsername = `${randomNoun}${randomAdjective}${Math.floor(Math.random() * 999)}`;
+        return funnyUsername;
+    }
+
+    // Function to get or generate user ID and save it to local storage
+    function getUserID() {
+        let userID = localStorage.getItem('userID');
+
+        if (!userID) {
+            userID = generateUniqueID();
+            localStorage.setItem('userID', userID);
+        }
+
+        return userID;
+    }
     
+    // Function to get or create the array of visited pages with timestamps for the user
+    function getVisitedPagesWithTimestamps() {
+        let visitedPagesWithTimestamps = JSON.parse(localStorage.getItem('visitedPagesWithTimestamps')) || [];
+        return visitedPagesWithTimestamps;
+    }
+    
+    // Function to save the current page and its timestamp to the array of visited pages
+    function saveVisitedPageWithTimestamp(page) {
+        let visitedPagesWithTimestamps = getVisitedPagesWithTimestamps();
+
+        // Check if the page is not already in the array
+        const existingPageIndex = visitedPagesWithTimestamps.findIndex(entry => entry.page === page);
+        const timestamp = new Date().toLocaleString();
+
+        if (existingPageIndex === -1) {
+            visitedPagesWithTimestamps.push({ page, timestamp });
+        } else {
+            visitedPagesWithTimestamps[existingPageIndex].timestamp = timestamp;
+        }
+
+        localStorage.setItem('visitedPagesWithTimestamps', JSON.stringify(visitedPagesWithTimestamps));
+    }
+    
+    // Display user ID on the page
+    $(document).ready(function () {
+        const userID = getUserID();
+        const currentPage = window.location.pathname;
+        saveVisitedPageWithTimestamp(currentPage);
+        $('#userIDContainer').text(userID);
+    });
+</script>
+
+    <script>
+        function fetchVisitCount(pageName) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://apgytools.in/visit/count-visit.php?page=' + encodeURIComponent(pageName), true);
+            xhr.send();
+        }
+            var currentPage = window.location.pathname;
+            fetchVisitCount(currentPage);
+    </script>
+
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -127,6 +610,49 @@
 </script>
 <!-- End Matomo Code -->
 
+<script>
+      $("#genbutton").click(function () {
+        var pn = $("#pn").val();
+        var pa = $("#pa").val();
+        var amt = $("#amt").val();
 
-  </body>
+        if (pn == "") {
+          $("#pn").addClass("error");
+          setTimeout(function () {
+            $("#pn").removeClass("error");
+          }, 300);
+        }
+
+        if (pa == "") {
+          $("#pa").addClass("error");
+          setTimeout(function () {
+            $("#pa").removeClass("error");
+          }, 300);
+        }
+
+        if (pa !== "") {
+          pn = pn.replace(/\s+/g, "+");
+          $("#result").fadeIn();
+          $("#link").val(
+            `https://tools.apgy.in/upi/${pn}/${pa}/${amt}`
+          );
+          $("#linkpreview").attr("href", `https://tools.apgy.in/upi/${pn}/${pa}/${amt}`);
+        }
+      });
+      
+      function copy() {
+        document.querySelector("#link").select();
+        document.execCommand('copy');
+        // Toasts success alert
+
+      halfmoon.initStickyAlert({
+      content: "Your Link Has Been Copied in Your Clipboard Successfully.",
+      title: "Copied!",
+      alertType: "alert-success",
+      fillType: ""
+    });
+    }
+</script>
+
+</body>
 </html>
